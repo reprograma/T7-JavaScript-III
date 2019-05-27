@@ -9,7 +9,8 @@ Crie uma função que leia um valor e exiba se ele é par ou ímpar.
 
 ## 2º exercício
 
-Crie uma função que dado um intervalo (entre x e y) exiba todos número pares:
+Crie uma função que dado um intervalo (entre x e y) exiba todos número pares.
+Exemplo: se x = 10 e y = 20, deverá ser percorrido de 10 até 20.
 
 ```js
 function pares(x, y) {
