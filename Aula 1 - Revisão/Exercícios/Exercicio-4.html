@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Exercício - 4 </title>
+</head>
+
+<body>
+    <ul></ul>
+</body>
+
+<script>
+    let animais = ["cachorro", "gato", "galinha", "bode", "periquito", "girafa"];
+    let elementUl = document.querySelector('ul');
+
+    for (let animal of animais) {
+        //criar li
+        let elementLi = document.createElement('li');
+        // let text = document.createTextNode(animais[1]);
+
+        //inserir valor dentro da li
+        elementLi.textContent = animal;
+        //adicionar li dentro da ul
+        elementUl.appendChild(elementLi);
+    }
+
+</script>
+
+</html>
