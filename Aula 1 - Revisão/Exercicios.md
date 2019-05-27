@@ -51,6 +51,10 @@ var nomes = ["aaa", "bbb", "ccc"];
 * ccc
 
 ```
+<!-- 1. criar ul no body -->
+<!-- 2. criar array com nomes -->
+<!-- 3. criar li com valores do array (pode usar for in ou for of-->
+<!-- 4. appendChild. -->
 
 # 5º exercício
 
