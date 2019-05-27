@@ -2,7 +2,7 @@
 
 ## 1º exercício
 
-Crie uma função que leia um valor e exiba se ele é par ou ímpar:
+Crie uma função que leia um valor e exiba se ele é par ou ímpar.
 
 
 ## 2º exercício
