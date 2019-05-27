@@ -4,7 +4,7 @@
 
 Crie uma função que leia um valor e exiba se ele é par ou ímpar.
 
-<!-- se o resto (%) da divisão  for = a 2, então par, senão é ímpar -->
+<!-- se o resto (%) da divisão por 2 for = 0, então par, senão é ímpar -->
 
 
 ## 2º exercício
