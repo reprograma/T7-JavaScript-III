@@ -4,6 +4,8 @@
 
 Crie uma função que leia um valor e exiba se ele é par ou ímpar.
 
+<!-- se o resto (%) da divisão  for = a 2, então par, senão é ímpar -->
+
 
 ## 2º exercício
 
@@ -15,6 +17,8 @@ function pares(x, y) {
 }
 
 pares(32, 321);
+
+//crie um for para percorrer o intervalo, e dentro dele verifique se o número é par ou não, conforme exercício 1
 ```
 
 ## 3º exercício
