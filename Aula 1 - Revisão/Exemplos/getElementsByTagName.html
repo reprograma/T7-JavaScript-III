@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Exemplo getElementsByTagName() </title>
+</head>
+
+<body>
+    <form class="form">
+        <label for="name">Nome</label>
+        <input type="text" id="nome" value="Bruna">
+        <label for="email">Nome</label>
+        <input type="text" id="email" value="bruna.vieira.t@hotmail.com">
+    </form>
+</body>
+
+<script>
+    var elementos = document.getElementsByTagName('input');
+   
+    for(var pos = 0; pos < elementos.length; pos++){
+        console.log("valor do input " + elementos[pos].id.toUpperCase());
+        console.log(elementos[pos].value);
+    }
+    
+</script>
+
+</html>
