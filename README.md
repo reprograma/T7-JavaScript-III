@@ -132,6 +132,6 @@ map cria um novo Array contendo os resultados da aplicação da função a todos
 **reduce** aplica uma função simultaneamente para dois valores do Array (da
 esquerda para a direita) de forma a reduzi-los a um valor único 
 
-[Alt Text](https://github.com/reprograma/T7-JavaScript-III/blob/master/Aula%202/Exemplos/map%2C%20filter%2C%20reduce.jpeg)
+![Alt Text](https://github.com/reprograma/T7-JavaScript-III/blob/master/Aula%202/Exemplos/map%2C%20filter%2C%20reduce.jpeg)
 
-[Alt Text](https://github.com/reprograma/T7-JavaScrhttps://github.com/reprograma/T7-JavaScript-III/blob/master/Aula%202/Exemplos/map%2C%20filter%2C%20reduce2.jpegipt-III/blob/master/Aula%202/Exemplos/map%2C%20filter%2C%20reduce.jpeg)
+![Alt Text](https://github.com/reprograma/T7-JavaScrhttps://github.com/reprograma/T7-JavaScript-III/blob/master/Aula%202/Exemplos/map%2C%20filter%2C%20reduce2.jpegipt-III/blob/master/Aula%202/Exemplos/map%2C%20filter%2C%20reduce.jpeg)
