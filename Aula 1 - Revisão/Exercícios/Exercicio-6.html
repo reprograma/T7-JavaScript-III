@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Exercício - 6 </title>
+</head>
+
+<body>
+    <ul> </ul>
+    <input type="text" name="nome">
+    <button onclick="adicionar()">Adicionar</button>
+</body>
+
+<script>
+    let animais = ["cachorro", "gato", "galinha", "bode", "periquito", "girafa"];
+    let textoInput = document.querySelector('input');
+    
+    //pegamos a ul
+    let getUl = document.querySelector('ul');
+
+    
+    function adicionarItem(text) {       
+        // let createUl = document.createElement('ul');
+
+        //criamos a li
+        let creatLi = document.createElement('li');
+        //falamos que o li vai receber o valor do input
+        // (textoInput = document.querySelector('input').value);
+        creatLi.textContent = text;
+
+        //ul vai receber o filho li
+        getUl.appendChild(creatLi);
+       // limpaInput();
+    }
+
+    // function limpaInput() {
+    //     textoInput.value = "";
+    // }
+
+    function adicionar() {
+         //pegar valor do input
+        // console.log(textoInput);
+        let value = textoInput.value;
+        adicionarItem(value);
+        textoInput.value = "";
+    }
+
+    for (animal of animais) {
+        adicionarItem(animal);
+    }
+
+
+</script>
+
+</html>
