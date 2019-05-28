@@ -113,24 +113,23 @@ o contexto desse objeto será a window.
 **Trabalhando com Array**
 
 **Principais Métodos**
-**concat** faz cópia simples do Array e adiciona os argumentos 
-**join** cria um string do Array. Adiciona o argumento como cola entre cada membro do Array. 
-**shift** remove e retorna o primeiro elemento 
-**pop** remove e retorna o ultimo elemento 
-**unshift** anexa os argumentos na frente do Array  
-**push** anexa os argumentos no final do Array  
-**reverse** inverte o Array sem copiá-lo 
-**slice** faz cópia simples da porção do Array delimitada por argumentos do índice 
-**splice** remove elementos especificados do Array, e os substitui com argumentos adicionais opcionais 
-**sort** classifica o Array sem copiá-lo, opcionalmente usando um argumento comparador 
-**toString** chama join sem passar um argumento
-**indexOf** retorna o primeiro elemento igual ao valor especificado, ou -1 se nenhum for encontrado 
-**lastIndexOf** retorna o último elemento igual ao valor especificado, ou -1 se nenhum for encontrado 
-**forEach** aplica a função fornecida para todos elementos do Array
+***concat** faz cópia simples do Array e adiciona os argumentos 
+***join** cria um string do Array. Adiciona o argumento como cola entre cada membro do Array. 
+***shift** remove e retorna o primeiro elemento 
+***pop** remove e retorna o ultimo elemento 
+***unshift** anexa os argumentos na frente do Array  
+***push** anexa os argumentos no final do Array  
+***reverse** inverte o Array sem copiá-lo 
+***slice** faz cópia simples da porção do Array delimitada por argumentos do índice 
+***splice** remove elementos especificados do Array, e os substitui com argumentos adicionais opcionais 
+***sort** classifica o Array sem copiá-lo, opcionalmente usando um argumento comparador 
+***toString** chama join sem passar um argumento
+***indexOf** retorna o primeiro elemento igual ao valor especificado, ou -1 *se nenhum for encontrado 
+***lastIndexOf** retorna o último elemento igual ao valor especificado, ou -1 se nenhum for encontrado 
+***forEach** aplica a função fornecida para todos elementos do Array
 map cria um novo Array contendo os resultados da aplicação da função a todos elementos do Array 
-**filter** cria um novo Array contendo todos os elementos para os quais a função fornecida retorna verdadeiro 
-**reduce** aplica uma função simultaneamente para dois valores do Array (da
-esquerda para a direita) de forma a reduzi-los a um valor único 
+***filter** cria um novo Array contendo todos os elementos para os quais a função fornecida retorna verdadeiro 
+***reduce** aplica uma função simultaneamente para dois valores do Array (da esquerda para a direita) de forma a reduzi-los a um valor único 
 
 ![map, filter, reduce](https://github.com/reprograma/T7-JavaScript-III/blob/master/Aula%202/Exemplos/map%2C%20filter%2C%20reduce.jpeg)
 
