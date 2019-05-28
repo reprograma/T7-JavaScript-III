@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>This no Arrow Function</title>
+</head>
+<body>
+
+    <button id="btn">Fazendo meu sansuíche</button>
+</body>
+
+<script>
+    const sanduiche = {
+        pao: 'francês',
+        queijo: 'cheddar',
+        preparar: function() {
+            return `Eu quero meu sanduíche com pão ${this.pao} and queijo ${this.queijo}!`;
+        },
+        fazer: function() {
+            window.setTimeout(() => {
+// se neste caso for usado função normal o this será =  window e não ao componente 
+                console.log( this.preparar() );
+            }, 500);
+        }
+    };
+    
+    const btn = document.getElementById('btn');
+    btn.addEventListener('click', function() { sanduiche.fazer() });
+</script>
+</html>
