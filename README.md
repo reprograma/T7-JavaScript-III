@@ -108,5 +108,5 @@ console.log(this)});
 
 o contexto desse objeto será a window.
 
-
+[Exemplo](https://github.com/reprograma/T7-JavaScript-III/blob/master/Aula%202/Exemplos/Arrow%20function%20-%20this.html)
 
