@@ -18,7 +18,8 @@ function exibeHabilidades(usuarios) {
     for (elemento of usuarios) {
       console.log(
         //`A ${elemento.nome} possui as habilidades: ${elemento.habilidades.toString()}`
-        `A ${elemento.nome} possui as habilidades: ${elemento.habilidades.join(" - ")}`
+        `A ${elemento.nome} possui as habilidades: 
+        ${elemento.habilidades.join(" - ")}`
       );
     }
   }

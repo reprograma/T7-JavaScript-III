@@ -12,15 +12,25 @@
 <script>
     
 
-    const listComponent = () => {
+    const listComponent = (type="text") => {
             return (
                 `
-                <input type="text" value="">                
+                <input type= ${type} value="">                
                 `
             )
         }
 
-    document.body.innerHTML = listComponent();
+    // const createButton = () => {
+    //     return (
+    //         `
+    //         <button> Adicionar </button>
+    //         `
+
+    //     )
+    // }
+
+    document.body.innerHTML = listComponent('password');
+  //  document.body.innerHTML = createButton();
     
 </script>
 

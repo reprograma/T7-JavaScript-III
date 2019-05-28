@@ -6,7 +6,7 @@
 </head>
 
 <body>
-    <ul data-list></ul>
+    <ul></ul>
 </body>
 
 <script>
@@ -30,20 +30,27 @@
     ]
 
     const listComponent = (data) => {
-        return data.map((item) => {
+        return data.map((item, indice) => {
+
             return (
                 `
                 <li>
+                <span>${ indice}</span>
                 <span>${ item.id}</span>
                 <span>${ item.name}</span>
+                
                 </li>
+
+                 <button onclick="(function(){
+                    console.log(${item.id});
+                })()">${item.name}</button>
                 `
             )
         }).join('')
     }
 
 
-    const el = document.querySelector('[data-list]');
+    const el = document.querySelector('ul');
     el.innerHTML = listComponent(data);
 
 
