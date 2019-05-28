@@ -35,7 +35,6 @@
             return (
                 `
                 <li>
-                <span>${ indice}</span>
                 <span>${ item.id}</span>
                 <span>${ item.name}</span>
                 
@@ -43,7 +42,8 @@
 
                  <button onclick="(function(){
                     console.log(${item.id});
-                })()">${item.name}</button>
+                })()">${item.name}
+                </button>
                 `
             )
         }).join('')
