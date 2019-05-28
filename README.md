@@ -134,4 +134,4 @@ esquerda para a direita) de forma a reduzi-los a um valor único
 
 ![map, filter, reduce](https://github.com/reprograma/T7-JavaScript-III/blob/master/Aula%202/Exemplos/map%2C%20filter%2C%20reduce.jpeg)
 
-![map, filter, reduce](https://github.com/reprograma/T7-JavaScrhttps://github.com/reprograma/T7-JavaScript-III/blob/master/Aula%202/Exemplos/map%2C%20filter%2C%20reduce2.jpeg)
+![map, filter, reduce](https://github.com/reprograma/T7-JavaScript-III/blob/master/Aula%202/Exemplos/map%2C%20filter%2C%20reduce2.jpeg)
