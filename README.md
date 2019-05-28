@@ -124,3 +124,14 @@ o contexto desse objeto será a window.
 **splice** remove elementos especificados do Array, e os substitui com argumentos adicionais opcionais 
 **sort** classifica o Array sem copiá-lo, opcionalmente usando um argumento comparador 
 **toString** chama join sem passar um argumento
+**indexOf** retorna o primeiro elemento igual ao valor especificado, ou -1 se nenhum for encontrado 
+**lastIndexOf** retorna o último elemento igual ao valor especificado, ou -1 se nenhum for encontrado 
+**forEach** aplica a função fornecida para todos elementos do Array
+map cria um novo Array contendo os resultados da aplicação da função a todos elementos do Array 
+**filter** cria um novo Array contendo todos os elementos para os quais a função fornecida retorna verdadeiro 
+**reduce** aplica uma função simultaneamente para dois valores do Array (da
+esquerda para a direita) de forma a reduzi-los a um valor único 
+
+[Alt Text](https://github.com/reprograma/T7-JavaScript-III/blob/master/Aula%202/Exemplos/map%2C%20filter%2C%20reduce.jpeg)
+
+[Alt Text](https://github.com/reprograma/T7-JavaScrhttps://github.com/reprograma/T7-JavaScript-III/blob/master/Aula%202/Exemplos/map%2C%20filter%2C%20reduce2.jpegipt-III/blob/master/Aula%202/Exemplos/map%2C%20filter%2C%20reduce.jpeg)
