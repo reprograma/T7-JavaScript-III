@@ -55,7 +55,12 @@ var nomes = ["aaa", "bbb", "ccc"];
 
 # 5º exercício
 
-A partir do exercício 3, adicione um input e um botão, na qual seja possível inserir um valor, ao clicar no botão, o value do input deverá ser adicionado à lista e inserido na ul.
+Crie um input e um botão, na qual seja possível inserir um valor, ao clicar no botão em uma li.
+
+
+# 6º exercício
+
+A partir dos exercícios 4 e 5, inicie a página com uma lista de array carregada um uma ul, e a partir de um input e um button, insira seu value na li.
 
 
 
