@@ -2,7 +2,7 @@
 
 # Aula 1: [link](https://github.com/reprograma/T7-JavaScript-III/blob/master/Aula%201%20-%20Revis%C3%A3o/%7Breprograma%7D%20-%20Revis%C3%A3o.pdf)
 
-#Aula 2:
+# Aula 2:
 
 **Trabalhando com Strings**
 
@@ -58,6 +58,55 @@ console.log(`Hello ${name}!`);
 // > Hello Reprograma!
 ```
 
+#Arrow Function
+
+**O que são e como funcionam as Arrow Functions?**
+
+A nova versão do JavaScript, a ES6, trouxe novas features e dentre elas uma nova forma de criar funções usando o operador =>. Esta nova forma de se trabalhar com funções são chamadas Arrow Functions.
+
+Vejamos um exemplo de como declarar arrow functions:
+
+```js
+const sum = (num1, num2) => {
+  return num1 + num2;
+}
+console.log(sum(1, 2));
+```
+
+Podemos encurtar ainda mais a sintaxe de uma arrow function, desde que ela possua apenas uma declaração:
+
+```js
+const sum = (num1, num2) => num1 + num2;
+```
+
+Ou seja, uma expressão arrow function possui uma sintaxe mais curta, semelhante as expressões lambda presente em linguagens como Java, F# entre outras.
+As arrow functions possuem dois benefícios:
+
+São menos verbosas do que as funções tradicionais
+Seu valor de this é definido à partir das funções onde foram definidas. Ou seja, não é mais necessário fazer bind().
+
+[Referência](https://medium.com/@raphalima8/arrow-functions-declara%C3%A7%C3%A3o-funcionamento-escopos-e-o-valor-de-this-9cb6449bca31)
+
+**This no Arrow Function**
+
+O objeto this se refere ao objeto na qual estamos interagindo naquele contexto, por exemplo:
+
+```js
+    const btn = document.getElementById('btn');
+    btn.addEventListener('click', function() { 
+    console.log(this)});
+```
+
+Neste console.log o retorno será o próprio botão. 
+Mas se eu trocar para uma arrow function o resultado será diferente, pois ela trabalha em cima de todo o contexto em que ele está acontecendo.
+
+```js
+    const btn = document.getElementById('btn');
+    btn.addEventListener('click', () => { 
+console.log(this)});
+```
+
+o contexto desse objeto será a window.
 
 
 
