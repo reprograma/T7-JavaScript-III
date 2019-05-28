@@ -31,7 +31,7 @@ console.log('Hello ' + name + '!');
 ```
 Precisávamos inclusive prestar atenção para não esquecer o espaço depois da palavra, porque senão juntava com a variável.
 
-**Trabalhando com Strings no ES6**
+** Trabalhando com Strings no ES6**
 
 Com a chegada do ES6, surgiu essa coisa maravilhosa que é o Template String. Agora basta utilizarmos o símbolo de crase ` na string e conseguimos criar interpolações e concatenar muito mais facilmente.
 Por exemplo:
@@ -58,7 +58,7 @@ console.log(`Hello ${name}!`);
 // > Hello Reprograma!
 ```
 
-#Arrow Function
+# Arrow Function
 
 **O que são e como funcionam as Arrow Functions?**
 

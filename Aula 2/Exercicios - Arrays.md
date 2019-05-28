@@ -48,7 +48,7 @@ Retorne um array que encontre as alunas na qual a matéria preferida seja JavaSc
 ]
 ```
 
-### 1.4 Unindo operações
+### 1.4 Unindo operações `reduce`
 
 Multiplique a idade de todas alunas por dois e depois realize um filtro nas que possuem no máximo 25 anos: 
 
