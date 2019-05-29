@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="exemplo.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar">
+    </nav>
+    <section class="cards">
+        
+    </section>
+</body>
+<script>
+    let resultados = [
+        {
+            titulo: "Ginger Champagne",
+            ingredientes: "champagne, ginger, ice, vodka",
+            imagem: "http://img.recipepuppy.com/1.jpg"
+        },
+        {
+            titulo: "Potato and Cheese Frittata",
+            ingredientes: "cheddar cheese, eggs, olive oil, onions, potato, salt",
+            imagem: "http://img.recipepuppy.com/2.jpg"
+        },
+        {
+            titulo: "Eggnog Thumbprints",
+            ingredientes: "brown sugar, butter, butter, powdered sugar, eggs, flour, nutmeg, rum, salt, vanilla extract, sugar",
+            imagem: "http://img.recipepuppy.com/3.jpg"
+        },
+        {
+            titulo: "Succulent Pork Roast",
+            ingredientes: "brown sugar, garlic, pork chops, water",
+            imagem: "http://img.recipepuppy.com/4.jpg"
+        },
+        {
+            titulo: "Irish Champ",
+            ingredientes: "black pepper, butter, green onion, milk, potato, salt",
+            imagem: "http://img.recipepuppy.com/5.jpg"
+        }
+    ];
+    const createNavbar = () => {
+        return (
+            ` 
+           <img class="navbar__logo" src="./logo.png" alt="Logo" />
+      
+            </nav>
+        `
+        )
+    };
+
+    const search = (e) => {
+        console.log(e);
+    }
+
+    let getNav = document.querySelector('nav');
+    getNav.innerHTML += createNavbar();
+
+    const createItens = (item) => {
+        return (
+            `
+            <div class="card">
+            <img class="imagem" src=${item.imagem} alt="img" />
+            <div>
+            <h2>${item.titulo}</h5>
+                <p class="ingredientes">
+                    <strong>Ingredients: </strong>
+                    ${item.ingredientes}
+                </p>
+            </div>
+            </div>
+            `
+        )
+    }
+
+    let sectionCards = document.querySelector('.cards');
+    resultados.map((result) => {
+        sectionCards.innerHTML += createItens(result);
+    });
+
+
+
+</script>
+
+</html>
