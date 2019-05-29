@@ -131,6 +131,6 @@ map cria um novo Array contendo os resultados da aplicação da função a todos
 * **filter** cria um novo Array contendo todos os elementos para os quais a função fornecida retorna verdadeiro 
 * **reduce** aplica uma função simultaneamente para dois valores do Array (da esquerda para a direita) de forma a reduzi-los a um valor único 
 
-![map, filter, reduce](https://github.com/reprograma/T7-JavaScript-III/tree/master/Aula%202%20-%20Arrow%20function%2C%20componentes%20e%20template/map%2C%20filter%2C%20reduce.jpeg)
+![map, filter, reduce](https://github.com/reprograma/T7-JavaScript-III/blob/master/Aula%202%20-%20Arrow%20function%2C%20componentes%20e%20template/Exemplos/map%2C%20filter%2C%20reduce.jpeg)
 
-![map, filter, reduce](https://github.com/reprograma/T7-JavaScript-III/tree/master/Aula%202%20-%20Arrow%20function%2C%20componentes%20e%20template/map%2C%20filter%2C%20reduce2.jpeg)
+![map, filter, reduce](https://github.com/reprograma/T7-JavaScript-III/blob/master/Aula%202%20-%20Arrow%20function%2C%20componentes%20e%20template/Exemplos/map%2C%20filter%2C%20reduce2.jpeg)
