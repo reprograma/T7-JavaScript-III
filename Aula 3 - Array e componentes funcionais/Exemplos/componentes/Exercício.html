@@ -10,7 +10,24 @@
 </head>
 
 <body>
-
+    <nav class="navbar">
+        <img class="navbar__logo" src="./logo.png" alt="Logo" />
+        <div class="group__input">
+            <input class="input__search" type="search" placeholder="Search" aria-label="Search">
+            <button class="button__search"> Search </button>
+        </div>
+    </nav>
+    
+    <div class="card">
+            <img class="imagem" src="http://img.recipepuppy.com/1.jpg" alt="img" />
+            <div class="">
+                <h2>Ginger Champagne</h5>
+                <p class="ingredientes">
+                    <strong>Ingredients: </strong>
+                    champagne, ginger, ice, vodka
+                </p>
+            </div>
+        </div>        
 
 </body>
 <script>
@@ -42,50 +59,7 @@
         }
     ];
 
-    const createNav = () => {
-        return (
-            `
-            <nav class="navbar">
-             <img class="navbar__logo" src="./logo.png" alt="Logo" />
-             <div class="group__input">
-            <input class="input__search" type="search" placeholder="Search" aria-label="Search">
-            <button class="button__search"> Search </button>
-        </div>
-        </nav>
-             `
-
-        )
-
-    }
-
-    document.body.innerHTML += createNav();
-
-
-    const createCard = (resultados) => {
-
-        return resultados.map((resultado) => {
-
-            return (
-                `
-              <div class="card">
-                 <img class="imagem" src=${resultado.imagem} alt="img" />
-            <div class="">
-                <h2>${resultado.titulo}</h5>
-                <p class="ingredientes">
-                    <strong>Ingredients: </strong>
-                    ${resultado.ingredientes}
-                </p>
-            </div>
-        </div>  
-              `
-            )
-        }
-        )
-    };
-
-
-    document.body.innerHTML += createCard(resultados);
-
+    
 </script>
 
 </html>
