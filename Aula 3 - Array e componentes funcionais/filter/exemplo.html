@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text">
+    <button type="submit"> Filtro</button>
+</body>
+
+<script>
+    let nomes = ["Jessica Oliveira", "Amanda Oliveira", "Talita Oliveira", "Carina Pereira", "Josi Pereira", "Beatriz Silva", "Ingrid Silva", "Michel Silva"];
+    let frutas = ["banana", "morango", "bacurí", "laranja"];
+
+    console.log(frutas);
+    let botao = document.querySelector('button');
+    botao.addEventListener('click', function () {
+        let valueInput = document.querySelector('input').value;
+
+        let returnFilter = frutas.filter((fru) => {
+            return fru == valueInput
+        })
+        if(returnFilter.length == 0 ){
+            alert('Não encontrado!')
+        }
+        console.log(frutas.filter((fru) => {
+            return fru == valueInput
+        })
+        );
+
+    })
+
+
+</script>
+
+</html>
