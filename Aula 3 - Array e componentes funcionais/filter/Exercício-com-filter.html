@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="exemplo.css">
-    <title>Document</title>
+    <title>Exercício com Busca</title>
 </head>
 
 <body>
@@ -49,24 +49,21 @@
             ` 
            <img class="navbar__logo" src="./logo.png" alt="Logo" />
            <div class="group__input">
-                <input class="input__search" type="search" placeholder="Search" aria-label="Search">
-                    <button class="button__search"> Search </button>
+                <input class="input__search" onKeyUp="limpar(this.value)" type="search" placeholder="Search" aria-label="Search">
+                    <button class="button__search" onclick="search()"> Search </button>
             </div>
-            
         `
         )
     };
 
-    const search = (e) => {
-        console.log(e);
-    }
-
     let getNav = document.querySelector('nav');
     getNav.innerHTML += createNavbar();
 
-    const createItens = (item) => {
-        return (
-            `
+    const createItens = (resultados) => {
+       
+       return resultados.map((item) => {
+            return (
+                `
             <div class="card">
             <img class="imagem" src=${item.imagem} alt="img" />
             <div>
@@ -78,13 +75,29 @@
             </div>
             </div>
             `
-        )
+            )
+        }).join("");
     }
 
     let sectionCards = document.querySelector('.cards');
-    resultados.map((result) => {
-        sectionCards.innerHTML += createItens(result);
-    });
+    // resultados.map((result) => {
+        sectionCards.innerHTML += createItens(resultados);
+    // });
+
+    const limpar = (value) => {
+        if (!value) {            
+            sectionCards.innerHTML = createItens(resultados);
+        } 
+    }
+
+    const search = () => {
+        let inputValue = document.querySelector('input').value;
+        let result = resultados.filter(res => {
+            return res.titulo.includes(inputValue) || res.ingredientes.includes(inputValue);
+        });
+        
+        sectionCards.innerHTML = createItens(result);
+    }
 
 
 

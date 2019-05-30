@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <input type="text">
+    <input type="text" onchange="return buscar(this.value)">
     <button type="submit"> Filtro</button>
 </body>
 
@@ -25,7 +25,7 @@
         let returnFilter = frutas.filter((fru) => {
             return fru == valueInput
         })
-        if(returnFilter.length == 0 ){
+        if (returnFilter.length == 0) {
             alert('Não encontrado!')
         }
         console.log(frutas.filter((fru) => {
@@ -33,7 +33,10 @@
         })
         );
 
-    })
+    });
+    function buscar(val) {
+        console.log(val);
+    }
 
 
 </script>
