@@ -1,5 +1,6 @@
+//const createNavbar = require('./navbar');
 import createNavbar from './navbar';
-import createItens from './cards';
+//import createItens from './cards.js';
 
 let resultados = [
     {
