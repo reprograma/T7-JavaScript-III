@@ -1,0 +1,20 @@
+.StudentList{
+    margin-top: 20px;
+  }
+  .StudentList table{
+    width: 100%;
+  }
+  .StudentList table th{
+    text-align: left;
+  }
+  .StudentList table td,
+  .StudentList table th{
+    padding: 10px;
+  }
+  .StudentList table tbody td{
+    border-bottom: solid 1px #EEE;
+  }
+  
+  .StudentList table tbody tr:last-child td{
+    border-bottom: none;
+  }
