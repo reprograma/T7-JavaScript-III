@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    
+  }
+  
+  body{
+    background: #EEE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #282828;
+  }
+  
+  .card{
+    background: white;
+    box-shadow: 0 2px 10px -4px rgba(0,0,0,0.2);
+    padding: 20px;
+  }
+  .container {
+    display: flex;  
+  }
+
+  h1 {
+    color: purple;
+  }
+  .row{
+    display: flex;
+  }
+  .-align-center{
+    align-items: center;
+  }
+  .-justify-center{
+    justify-content: center;
+  }
+  .container{
+    width: 860px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: calc(100% - 40px) ;
+  }
