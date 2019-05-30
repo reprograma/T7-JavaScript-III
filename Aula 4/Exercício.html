@@ -13,35 +13,99 @@
 
 <body>
 
-    <div class="container">
+    <div class="App">
         <div class="container">
             <h1>Estudantes</h1>
-            <div class="card row -justify-center -align-center StudentForm">
+            <div class="card row -justify-center -align-center StudentForm" id="form">
+
+            </div>
+            <div class="card StudentList" id="list">
+
+            </div>
+        </div>
+</body>
+
+<script>
+
+    let lista = [];
+    const formList = () => {
+        return (
+            `            
                 <form class="row" onSubmit="">
                     <div class="form-group">
                         <label>Nome</label>
                         <input type="text" name="" value="" onChange="" />
                     </div>
-                    <button class="btn-add">Cadastrar</button>
+                    <button id="button" class="btn-add">Cadastrar</button>
                 </form>
-            </div>
-            <div class="card StudentList">
-                <table>
+             `
+        )
+    }
+
+    document.querySelector('#form').innerHTML += formList();
+
+
+    const table = () => {
+        return (
+            `
+            <table>
                     <thead>
                         <tr>
                             <th>Nome</th>
                         </tr>
                     </thead>
                     <tbody>
+                        
+                    </tbody>
+                </table>
+            `
+        )
+    };
+    
 
-                        <tr>
-                            <td> Nome </td>
+     const cadastrar = (event) => {
+        event.preventDefault();
+        let input = document.querySelector('input').value;
+        lista.push(input);
+       // console.log(input)
+       lista.map(i => {
+           return document.querySelector('tbody').innerHTML += gerarLinha(input);
+       })
+        
+
+    }
+
+    document.getElementById('button').addEventListener(
+        'click', cadastrar, false
+    );
+  
+
+    const gerarLinha = (nome) => {
+        return (
+            `<tr>
+                            <td> ${nome} </td>
                             <td>
-                                <button class="btn-remove" onClick="">×</button>
+                                <button id="remove" class="btn-remove" onclick="remover(${nome})">×</button>
                             </td>
-                        </tr>
-            </div>
-        </div>
-</body>
+                        </tr> 
+                        `
+        )
+    }
+
+    document.querySelector('#list').innerHTML += table();
+    document.querySelector('tbody').innerHTML += gerarLinha("");
+
+    const remover = (nome) => {
+      //  event.preventDefault();
+        console.log(nome)
+    }
+
+    // document.getElementById('remove').addEventListener(
+    //     'click', remover, false
+    // );
+
+
+
+</script>
 
 </html>
