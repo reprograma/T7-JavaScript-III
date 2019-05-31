@@ -188,7 +188,7 @@ const bruna = new Pessoa('Bruna', 25);
 ```
 
 this faz referencia ao objeto criado pelo new.
-Ao executar a função Cachorro com new, estamos fazendo quatro coisas:
+Ao executar a função Pessoa com new, estamos fazendo quatro coisas:
 
 1. criando um novo objeto ({}).
 2. definindo o construtor do objeto bruna como Pessoa.
@@ -314,14 +314,14 @@ var jani = new Pessoa(20, "Valor qualquer");
 
 console.log(bruna.atributo1)
 console.log(bruna.atributo2)
-victor.metodo1();
-victor.metodo2("Oi");
+bruna.metodo1();
+bruna.metodo2("Oi");
 console.log(bruna.metodoDeSoma(1,1));
 
 console.log(jani.atributo1)
 console.log(jani.atributo2)
-lima.metodo1();
-lima.metodo2("Oi");
+jani.metodo1();
+jani.metodo2("Oi");
 console.log(jani.metodoDeSoma(1,1));
 
 ```
