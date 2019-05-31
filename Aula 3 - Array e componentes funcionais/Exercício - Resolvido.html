@@ -51,15 +51,10 @@
            <div class="group__input">
                 <input class="input__search" type="search" placeholder="Search" aria-label="Search">
                     <button class="button__search"> Search </button>
-            </div>
-            
+            </div>            
         `
         )
     };
-
-    const search = (e) => {
-        console.log(e);
-    }
 
     let getNav = document.querySelector('nav');
     getNav.innerHTML += createNavbar();
@@ -85,9 +80,6 @@
     resultados.map((result) => {
         sectionCards.innerHTML += createItens(result);
     });
-
-
-
 </script>
 
 </html>
